@@ -56,4 +56,4 @@ target_compile_definitions(OpenAL PRIVATE
 )
 
 target_include_directories(OpenAL PUBLIC include)
-target_compile_definitions(OpenAL PUBLIC AL_LIBTYPE_STATIC)
+target_compile_definitions(OpenAL PUBLIC AL_LIBTYPE_STATIC _WIN_RT)

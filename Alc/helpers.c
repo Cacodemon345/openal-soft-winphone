@@ -56,7 +56,7 @@ DEFINE_GUID(IID_IAudioRenderClient,   0xf294acfc, 0x3146, 0x4483, 0xa7,0xbf, 0xa
 
 
 //Windows STore/Phone cannot use Tls API functions
-#if defined _WIN_RT
+#if defined _WIN_RT && NTDDI_VERSION < NTDDI_WIN10_RS1
 
 #	include <time.h>
 
